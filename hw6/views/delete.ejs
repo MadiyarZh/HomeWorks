@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+</head>
+<body>
+    <div class="container" style="width: 60%; margin: 3% auto;">
+        <div class="container-fluid">
+            <h1>Delete</h1>
+            <form action="/remove/<%= id %>" method="post">
+                    <p>Are you sure to delete this user?</p><br>
+                    <input type="submit" value="Yes" class="btn btn-danger">
+                    <a href="/" class="btn btn-default">No</a>
+            </form>   
+        </div>
+    </div>
+</body>
+</html>

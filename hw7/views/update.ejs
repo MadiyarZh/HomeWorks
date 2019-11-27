@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+ 
+</head>
+<body>
+  <div class="container" style="width: 60%; margin: 3% auto;">
+    <div class="container-fluid">
+            <h2>Edit</h2>
+            <form action="/update/<%= data._id %>" method="post">
+				<div class="form-group">
+				<label >Id</label>
+				<input type="text" class="form-control" name='id' id="id" value='<%= data._id %>' placeholder="Enter name">
+				</div>
+				<div class="form-group">
+				<label>Name</label>
+				<input type="text" class="form-control" name='name' id="name" value='<%= data.name %>' placeholder="Enter surname">
+				</div>
+				<div class="form-group">
+				<label>Surname</label>
+				<input type="text" class="form-control" name='surname' id="surname" value='<%= data.surname %>' placeholder="Enter surname">
+				</div>
+
+              <button type="submit" class="btn btn-sucess">Update</button>
+              <a href="/" class="btn btn-default">Cancel</a>
+              
+          </form>
+    </div>
+  </div>
+</body>
+</html>
